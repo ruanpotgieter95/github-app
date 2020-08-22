@@ -1,7 +1,6 @@
 import React from 'react';
 import { Route, Redirect, useLocation } from 'react-router-dom';
 
-
 export default ({ children, ...rest }) => {
     const isAuthenticated = true;
     const { pathname, search } = useLocation();
