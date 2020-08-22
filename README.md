@@ -1,2 +1,2 @@
 # github-app
-Testing technologies by using github's API
+Testing technologies in React by using github's API
