@@ -1,0 +1,1 @@
+export { saveToSessionStorage, loadFromSessionStorage } from '__helpers__/sessionStorage';

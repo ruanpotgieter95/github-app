@@ -1,8 +1,9 @@
 import React from 'react';
 import { Route, Redirect, useLocation } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 export default ({ children, ...rest }) => {
-    const isAuthenticated = true;
+  const isAuthenticated = useSelector(state => state.auth.isAuthenticated);
     const location = useLocation();
   
     return (
