@@ -1,0 +1,14 @@
+.login {
+
+    button {
+        background-color: #85898e;
+        border: 1px solid #85898e;
+        border-radius: 2px;
+        padding: 8px 16px;
+
+        &:hover {
+            cursor: pointer;
+            background-color: darken($color: #85898e, $amount: 3);
+        }
+    }
+}

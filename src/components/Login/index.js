@@ -6,12 +6,8 @@ import './styles.scss';
 export default () => {
     const dispatch = useDispatch();
     return (
-        <nav>
-            <span>Logo</span>
-            <span className="hover" 
-                onClick={() => dispatch(login(false, false))}
-            >Logout</span>
-        </nav>
+        <div className="login">
+            <button onClick={() => dispatch(login(false, true))}>Login</button>
+        </div>
     )
 }
-

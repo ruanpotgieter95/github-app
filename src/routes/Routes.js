@@ -2,14 +2,14 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Redirect } from 'react-router-dom';
 import { PrivateRoute, PublicRoute } from 'routes';
 
-import { Navbar } from 'components';
+import { Navbar, Login } from 'components';
 
 export default () => {
     return (
         <Router>
             <Switch>
                 <PublicRoute exact path="/login">
-                   <div>Public Route</div>
+                   <Login />
                 </PublicRoute>
                 <PrivateRoute exact path="/dashboard">
                     <Navbar />
