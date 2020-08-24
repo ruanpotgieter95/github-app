@@ -8,8 +8,7 @@ export const searchRepositories = (search="") => {
         dispatch(repositoryLoading(true));
 
         try {
-            const response = await api.get(`/repositories?q=${search}`);
-
+            const response = await api.get(`/search/repositories?q=${search}`);
             dispatch(setRepositoryList(response.data));
         } catch(e) {
             console.error('An error occured', e);

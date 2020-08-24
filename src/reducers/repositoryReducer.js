@@ -1,7 +1,10 @@
 import { SET_REPOSITORY_LIST, REPOSITORY_LOADING } from 'actions/types';
 
 const initialState = {
-    list: [],
+    list: {
+        items: [],
+        total_count: 0
+    },
     loading: false
 }
 
