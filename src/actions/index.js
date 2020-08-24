@@ -1,2 +1,2 @@
 export { login } from 'actions/loginActions';
-export { setRepositoryList, repositoryLoading } from 'actions/repositoryActions';
+export { setRepositoryList, repositoryLoading, setRepositoryIssues } from 'actions/repositoryActions';

@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export default axios.create({
     baseURL: 'https://api.github.com/',
-    timeout: 5000
+    timeout: 10000
 });
 
-export { searchRepositories } from 'api/search';
+export { searchRepositories, searchRepositoryIssues } from 'api/search';

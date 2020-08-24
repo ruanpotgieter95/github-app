@@ -11,3 +11,4 @@ export { default as Login } from 'components/Login';
 // Repositories
 export { default as RepositoryList } from 'components/RepositoryList';
 export { default as RepositoryCard } from 'components/RepositoryCard';
+export { default as RepositoryIssues } from 'components/RepositoryIssues';
