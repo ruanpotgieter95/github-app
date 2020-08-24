@@ -1,25 +1,30 @@
-import React, { useEffect, useState } from 'react';
-import api from 'api';
+import React, { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import { useDispatch, useSelector, shallowEqual } from 'react-redux';
 import { RepositoryCard } from 'components';
+import { searchRepositories } from 'api';
 import './styles.scss';
 
 export default () => {
-    const [repositories, setRepositories] = useState([]);
+    const dispatch = useDispatch();
+    const { search } = useParams();
+    const { repositoryList, loading } = useSelector(state => ({
+        repositoryList: state.repository.list,
+        loading: state.repository.loading
+    }), shallowEqual);
 
     useEffect(() => {
-        const getRepositories = async () => {
-            const response = await api.get('/repositories?q=bootstrap');
-            setRepositories(response.data);
-            console.log(response.data);
+        if(!loading && repositoryList.length === 0) {
+            dispatch(searchRepositories(search))
         }
-
-        getRepositories();
-    },[]);
+        
+    },[search, dispatch, repositoryList, loading]);
 
     return (
         <div className="repository_list">
             <h2>List</h2>
-            {repositories.map(repository => <RepositoryCard key={repository.node_id} repository={repository} />)}
+            {loading && <h3>Loading...</h3>}
+            {repositoryList.map(repository => <RepositoryCard key={repository.node_id} repository={repository} />)}
         </div>
     )
 }

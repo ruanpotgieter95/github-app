@@ -11,11 +11,15 @@ export default () => {
                 <PublicRoute exact path="/login">
                    <Login />
                 </PublicRoute>
-                <PrivateRoute exact path="/repositories">
+                <PrivateRoute exact path="/dashboard">
+                    <Navbar />
+                    <div>Please search for an entity</div>
+                </PrivateRoute>
+                <PrivateRoute exact path="/repositories/:search">
                     <Navbar />
                     <RepositoryList />
                 </PrivateRoute>
-                <Redirect to="/repositories" />
+                <Redirect to="/dashboard" />
             </Switch>
         </Router>
     )

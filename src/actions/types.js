@@ -1,1 +1,4 @@
 export const LOGIN = 'LOGIN';
+
+export const SET_REPOSITORY_LIST = 'SET_REPOSITORY_LIST';
+export const REPOSITORY_LOADING = 'REPOSITORY_LOADING';
