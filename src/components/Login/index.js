@@ -19,8 +19,8 @@ export default () => {
                 <h3>Login</h3>
                 <sub>Only used to show private/public routes</sub>
                 <sub>Type a fake email and password</sub>
-                <input type="email" required/>
-                <input type="password" required/>
+                <input type="email" required placeholder="email"/>
+                <input type="password" required placeholder="password"/>
                 <button>Login</button>
             </form>
         </div>
