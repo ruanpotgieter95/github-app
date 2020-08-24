@@ -16,3 +16,4 @@ export { default as RepositoryIssues } from 'components/RepositoryIssues';
 export { default as RepositoryIssueCard } from 'components/RepositoryIssueCard';
 export { default as RepositoryPlaceholder } from 'components/RepositoryPlaceholder';
 export { default as IssueFilters } from 'components/IssueFilters';
+export { default as RepositoryShowMore } from 'components/RepositoryShowMore';

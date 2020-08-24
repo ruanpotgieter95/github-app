@@ -7,9 +7,18 @@
         align-items: center;
         color: #ffffff;
         font-weight: bold;
+
+        div {
+            margin-left: 12px;
+            flex-grow: 1;
+        }
         
         h3 {
             margin: 0;
         }
+    }
+
+    footer {
+        text-align: center;
     }
 }
