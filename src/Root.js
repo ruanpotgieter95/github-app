@@ -14,7 +14,8 @@ export default ({ children, initialState = loadFromSessionStorage()}) => {
 
     store.subscribe(() =>  saveToSessionStorage({
         ...store.getState().auth.isAuthenticated && {
-            auth: store.getState().auth
+            auth: store.getState().auth,
+            repository: store.getState().repository
         }
     }));
 
