@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, shallowEqual } from 'react-redux';
-import { RepositoryCard } from 'components';
+import { RepositoryCard, RepositoryPlaceholder } from 'components';
 import './styles.scss';
 
 export default () => {
@@ -12,10 +12,16 @@ export default () => {
 
     return (
         <div className="repository_list">
-            <h2>Found {repositoryTotal} results</h2>
-            {loading && <h3>Loading...</h3>}
+            {!loading && <h2>Found {repositoryTotal} results</h2>}
+            {loading && (<>
+                    <h3>Loading...</h3>
+                    <RepositoryPlaceholder />
+                    <RepositoryPlaceholder />
+                    <RepositoryPlaceholder />
+                </>
+            )}
             {(!loading && repositoryList.length === 0) && <h3>No Results found</h3>}
-            {repositoryList.map(repository => <RepositoryCard key={repository.node_id} repository={repository} />)}
+            {!loading && repositoryList.map(repository => <RepositoryCard key={repository.node_id} repository={repository} />)}
         </div>
     )
 }
