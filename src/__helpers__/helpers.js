@@ -1,3 +1,5 @@
+import moment from 'moment';
+
 export const pieData = (issues) => {
     const total = issues.length;
     let openTotal = 0;
@@ -13,3 +15,5 @@ export const pieData = (issues) => {
 
     return { total, openTotal, closeTotal }
 }
+
+export const formatDate = (date) => moment(date).format('DD MMM YYYY HH:mm');

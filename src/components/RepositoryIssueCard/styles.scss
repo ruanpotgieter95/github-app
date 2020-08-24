@@ -1,0 +1,39 @@
+.repository_issue_card_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    margin-bottom: 12px;
+
+    .title {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        margin-left: 12px;
+        padding-right: 12px;
+
+        sub {
+            font-size: 14px;
+            font-weight: bold;
+            
+        }
+    }
+}
+
+.repository_issue_card_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    font-size: 14px;
+    .dates {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+    }
+}

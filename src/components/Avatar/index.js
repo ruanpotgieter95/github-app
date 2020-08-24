@@ -1,9 +1,9 @@
 import React from 'react';
 import './styles.scss';
 
-export default ({imgURL}) => {
+export default ({imgURL, onClick}) => {
 
     return (
-        <img className="avatar" src={imgURL} alt="" />
+        <img className="avatar hover" src={imgURL} alt="" onClick={onClick} />
     )
 }

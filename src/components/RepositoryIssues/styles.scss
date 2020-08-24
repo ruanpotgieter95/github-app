@@ -3,4 +3,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    .pie {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
