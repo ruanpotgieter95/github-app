@@ -2,7 +2,6 @@ import React from 'react';
 import './styles.scss';
 
 export default ({details}) => {
-    console.log(details);
     return (
         <div className="repository_show_more">
             <div>
@@ -17,5 +16,3 @@ export default ({details}) => {
         </div>
     )
 }
-
-// URL, description, forks count, stargazers count, open issues count etc

@@ -15,7 +15,9 @@ export default ({repository}) => {
         <Card>
             <div className="repository_card" >
                 <header className="header">
-                    <Avatar imgURL={repository.owner.avatar_url} />
+                    <Avatar imgURL={repository.owner.avatar_url} 
+                        onClick={() => window.open(repository.html_url)}
+                    />
                     <div>
                         <h3>{repository.name}</h3>
                         <sub>{repository.full_name}</sub>
