@@ -2,6 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { login } from 'actions';
+import Logo from 'assets/logo/Octocat.png';
 import './styles.scss';
 
 export default () => {
@@ -11,7 +12,7 @@ export default () => {
     return (
         <nav>
             <div>
-                <span>Logo</span>
+                <img src={Logo} alt="" />
                 <span className="hover button" 
                     onClick={() => history.push('/repositories')}
                 >Repositories</span>

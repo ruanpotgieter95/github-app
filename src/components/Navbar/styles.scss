@@ -11,6 +11,16 @@ nav {
     font-weight: bold;
     font-size: 18px;
 
+    img {
+        height: 40px;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     .button {
         margin-left: 12px;
     }
