@@ -11,8 +11,8 @@ describe('RepositoryIssueCard', () => {
         },
         state: 'open',
         title: 'Some Title',
-        created_at: "2020-01-01T10:30:01.333+02:00",
-        updated_at: "2020-01-02T11:45:01.333+02:00",
+        created_at: "2020-01-01T10:30:01.333",
+        updated_at: "2020-01-02T11:45:01.333",
         comments: "My Comment"
     }
 
