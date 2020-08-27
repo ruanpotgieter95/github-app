@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Redirect } from 'react-router-dom';
+import { HashRouter as Router, Switch, Redirect } from 'react-router-dom';
 import { PrivateRoute, PublicRoute } from 'routes';
 
 import { Navbar, Login, RepositoryList, RepositoryIssues, SearchBar, RepositoryPlaceholder, Page } from 'components';

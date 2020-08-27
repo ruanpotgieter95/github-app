@@ -77,8 +77,8 @@ describe('pieData', () => {
 
 describe('formatDate', () => {
     
-    it('returns "01 Jan 2020 10:30" when input is 2020-01-01T10:30:01.333+02:00 ', () => {
-        const result = formatDate("2020-01-01T10:30:01.333+02:00");
+    it('returns "01 Jan 2020 10:30" when input is 2020-01-01T10:30:01.333 ', () => {
+        const result = formatDate("2020-01-01T10:30:01.333");
 
         expect(result).toEqual("01 Jan 2020 10:30");
     });
