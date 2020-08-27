@@ -15,9 +15,9 @@ export default () => {
         loading: state.repository.loading
     }), shallowEqual);
 
-    useEffect(() => {
-        dispatch(searchRepositories(search))
-    },[])
+    // useEffect(() => {
+    //     dispatch(searchRepositories(search))
+    // },[])
 
     return (
         <div className="repository_list">
