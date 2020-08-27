@@ -16,7 +16,7 @@ export default () => {
         <div className="login">
             <form onSubmit={submit}>
                 <img src={Logo} alt="" />
-                <h3>Login</h3>
+                <h3>Login From deployment</h3>
                 <sub>Only used to show private/public routes</sub>
                 <sub>Type a fake email and password</sub>
                 <input type="email" required placeholder="email"/>
